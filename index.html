@@ -1,15 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
+  <head>
+    <meta charset="utf-8">
+    <title>My place finder</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  </head>
+  <body>
     <div class="container">
-        <h1>Hello World!</h1>
-        <button id="btn">Click me</button>
+      <h1>Find me a place</h1>
+      <div class="row justify-content-center">
+        <div class="col-xl-9">
+          <div id="map"> </div>
+        </div>
+        <div class="col-xl-3">
+          <table class="datas">
+            <tr>
+              <div class="col-xl-3">
+              <th>Neighborhood data</th>
+            </div>
+            </tr>
+            <tr>
+                <th>neighborhood</th>
+                <th>ubication</th>
+                <th>borough</th>
+            </tr>
+            <tbody id="tableBody">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6">
+          <p class="er">Please choose an option to classify the places</p>
+        </div>
+        <div class="col-xl-6">
+
+          <select class="OS">
+<option value="1">General</option>
+<option value="2">Distance to NYU Stern School of Business</option>
+<option value="3">Affordability</option>
+<option value="10">Security</option>
+</select>
+          <button id="Show" name="show">Show</button>
+            </div>
+          </div>
+        </div>
+    <div class="row">
+      <div class="col-md-3">
+        <button id="getLocations">Get getLocations</button>
+        <button id="ShowLocations">Show Locations</button>
+      </div>
     </div>
-    <script src="index.js"></script>
-</body>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKLOC2nNGCag9x82Xj206A5h5VhxVTCXA&callback=initMap">
+  </script>
+
+  <script src="index.js"></script>
+  </body>
 </html>

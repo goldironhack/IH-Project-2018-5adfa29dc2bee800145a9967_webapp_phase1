@@ -1,9 +1,26 @@
-body {
-    color: #444;
-    font-family: Arial, sans-serif;
+#map {
+        right: auto;
+        height: 400px;
+        width: 100%;
+       }
+h1{
+  text-align: center;
 }
-
-.container {
-    width: 100%;
-    max-width: 960px;
+.container{
+  text-align:justify;
+}
+.row{
+  text-align: left;
+}
+.er{
+  text-align:right;
+}
+th, td{
+  text-align: center;
+  width 100px;
+}
+#colu{
+overflow: auto;
+width: 200px;
+height: 200px; /*establece la altura máxima, lo que no entre quedará por debajo y saldra la barra de scroll*/
 }
